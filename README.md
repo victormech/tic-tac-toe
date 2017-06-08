@@ -1,11 +1,12 @@
 TO RUN THIS PROJECT:
 
-To run this test you just have to install the Docker and Docker Compose. After the installation you just have to make sure that
-the folder "/var" of the project have read and write permission. After that you have to run these console commands inside
+To run this project you just have to install the Docker and Docker Compose. After the installation you just have to make sure that
+the folder `"/var"` of the project have read and write permission. After that you have to run these console commands inside
 the project folder (in that order):
 
-docker-compose build
-docker-compose up -d
+`docker-compose build`
+
+`docker-compose up -d`
 
 After that you just go to your web browser and set the url to:
 http://localhost:8082/
@@ -13,9 +14,7 @@ http://localhost:8082/
 Please don't forget to try the HARD level :)
 
 
-=================================================================================================================================
 
-About the test:
 My approach on this project was to create the game logic on a separated package to make them really reusable.
 So i've created all the logic on the TicTacToeGame folder and he is totally decoupled of the rest of the code.
 
