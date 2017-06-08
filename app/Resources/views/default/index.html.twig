@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                <h1>TIC TAC TOE GAME</h1>
+            </div>
+
+            <div id="menu_screen">
+                <form id="game_form">
+                    <p>Choose the difficult level:</p>
+                    <p>
+                        <input name="level_check" type="radio" value="EASY" checked="checked">EASY
+                    </p>
+                    <p>
+                        <input name="level_check" type="radio" value="HARD">HARD
+                    </p>
+                    <p>
+                        <input id="play_button" type="button" value="PLAY!" style="width: 150px;height: 30px">
+                    </p>
+                </form>
+            </div>
+
+            <div id="game">
+                <p style="text-align: center">
+                    <input id="restart_button" type="button" value="RESTART GAME" style="width: 150px;height: 30px">
+                </p>
+                <table id="board">
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hidden_box">
+    {% image '@AppBundle/Resources/public/img/loading.gif' %}
+        <img id="loading_image" src="{{ asset_url }}"  />
+    {% endimage %}
+    </div>
+    <script>
+        var resourceUrl = '{{ resourceUrl }}';
+    </script>
+{% endblock %}

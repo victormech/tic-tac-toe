@@ -1,0 +1,96 @@
+body { background: #F5F5F5; font: 18px/1.5 sans-serif; }
+h1, h2 { line-height: 1.2; margin: 0 0 .5em; }
+h1 { font-size: 36px; }
+h2 { font-size: 21px; margin-bottom: 1em; }
+p { margin: 0 0 1em 0; }
+a { color: #0000F0; }
+a:hover { text-decoration: none; }
+code { background: #F5F5F5; max-width: 100px; padding: 2px 6px; word-wrap: break-word; }
+#wrapper { background: #FFF; margin: 1em auto; max-width: 800px; width: 95%; }
+#container { padding: 2em; }
+#welcome, #status { margin-bottom: 2em; }
+#welcome h1 span { display: block; font-size: 75%; }
+#icon-status, #icon-book { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
+#icon-book { display: none; }
+#welcome { text-align: center}
+
+@media (min-width: 768px) {
+    #wrapper { width: 80%; margin: 2em auto; }
+    #icon-book { display: inline-block; }
+    #status a, #next a { display: block; }
+
+    @-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+    .sf-toolbar { opacity: 0; -webkit-animation: fade-in 1s .2s forwards; animation: fade-in 1s .2s forwards;}
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 0px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+#board {
+
+}
+
+#menu_screen {
+    text-align: center;
+}
+
+td {
+    width: 120px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 65px;
+
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#game {
+    width:100%;
+    height:100%;
+    opacity: 0;
+    display: none;
+}
+
+#blackscreen {
+    opacity:    0.8;
+    background: #fff;
+    width:      100%;
+    height:     100%;
+    z-index:    10;
+    top:        0;
+    left:       0;
+    position:   fixed;
+    display: none;
+}
+
+#loadimage {
+    width:      100%;
+    height:     100%;
+    z-index:    15;
+    top:        0;
+    left:       0;
+    position:   fixed;
+    display: none;
+}
+
+#loadimage img {
+    opacity:    0.1;
+}
+
+.hidden_box {
+    display: none;
+}

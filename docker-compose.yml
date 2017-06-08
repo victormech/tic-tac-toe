@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  php:
+      build: docker/php7-fpm
+      volumes:
+          - ./:/var/www/symfony
+          - ./logs/symfony:/var/www/symfony/app/logs
+  nginx:
+      build: docker/nginx
+      ports:
+          - 8082:80
+      volumes_from:
+          - php
+      volumes:
+          - ./logs/nginx/:/var/log/nginx
