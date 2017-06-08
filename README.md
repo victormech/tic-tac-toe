@@ -1,4 +1,6 @@
-TO RUN THIS PROJECT:
+# Tic Tac Toe Game
+
+## Instalation:
 
 To run this project you just have to install the Docker and Docker Compose. After the installation you just have to make sure that
 the folder `"/var"` of the project have read and write permission. After that you have to run these console commands inside
@@ -6,7 +8,6 @@ the project folder (in that order):
 
 ```bash
 docker-compose build
-
 docker-compose up -d
 ```
 
