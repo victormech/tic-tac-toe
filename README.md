@@ -20,7 +20,7 @@ So i've created all the logic on the TicTacToeGame folder and he is totally deco
 
 The back-end logic was made using the symfony framework through the two controllers that i've wrote to this application.
 The DefaultController is for the game front-end and the ApiController is for the api calls. And of course we have all the
-javascript to create the game. As it was requested all the logic is inside the PHP and the javascript have to ask to the
+javascript to create the game. All the logic is inside the PHP and the javascript have to ask to the
 api what's the next move and the status of the game.
 
 So we have two difficulty levels on the game that corresponds to the two AI classes. One of these AI generates a simple
