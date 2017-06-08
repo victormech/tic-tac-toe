@@ -4,9 +4,11 @@ To run this project you just have to install the Docker and Docker Compose. Afte
 the folder `"/var"` of the project have read and write permission. After that you have to run these console commands inside
 the project folder (in that order):
 
-`docker-compose build`
+```bash
+docker-compose build
 
-`docker-compose up -d`
+docker-compose up -d
+```
 
 After that you just go to your web browser and set the url to:
 http://localhost:8082/
